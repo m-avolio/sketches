@@ -1,6 +1,5 @@
 // Globals
 let images = [];
-let scaleFactor = 1.0;
 
 function setup() {
   // Canvas size defined in index.html
@@ -33,10 +32,8 @@ function preload() {
 function draw() {
   if (images.length === 0) return;
   
-  print(width, height)
   let mx = (mouseX/width - 0.5);
   let my = -(mouseY/height - 0.5);
-  print(mx, my)
   let closestIndex = -1;
   let minDist = Infinity;
 
@@ -60,11 +57,10 @@ function draw() {
 
   let scaleW = width / chosen.width;
   let scaleH = height / chosen.height;
-  scaleFactor = Math.min(scaleW, scaleH);
+  let scaleFactor = Math.min(scaleW, scaleH);
   push();
   let wImg = chosen.width * scaleFactor;
   let hImg = chosen.height * scaleFactor;
-  print(wImg, hImg)
   image(chosen, 0, 0, wImg, hImg);
   pop();
 }
