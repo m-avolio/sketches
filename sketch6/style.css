@@ -1,0 +1,35 @@
+html, 
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    flex-direction: column;
+  }
+  
+  #canvas-container{
+    width: 600px; 
+    height: 600px;
+  }
+
+  .sketch-num {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    width: 600px;
+    color: #858585;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: left;
+    width: 600px;
+    color: #1A1A1A;
+    font-family: Helvetica, Arial, sans-serif;
+  }
