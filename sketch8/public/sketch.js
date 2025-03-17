@@ -2,7 +2,7 @@ let flock;
 let clientId;
 const MAX_BOIDS = 300;
 
-const socket = io();
+const socket = io("http://localhost:3000");
 socket.on("connect", () => {
   clientId = socket.id;
   console.log("Connected with id:", clientId);
